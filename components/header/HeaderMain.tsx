@@ -1,11 +1,12 @@
 import React from "react";
+import HeaderContent from "./HeaderContent";
+import Navbar from "./Navbar";
 
 const HeaderMain = () => {
   return (
     <>
-      <div>
-        <p className="text-red-500">Test message</p>
-      </div>
+      <HeaderContent />
+      <Navbar />
     </>
   );
 };
