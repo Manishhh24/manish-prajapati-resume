@@ -16,7 +16,8 @@ module.exports = {
         libreBaskerVille: ['Libre Baskerville', 'sans']
       },
       screens:{
-        xxs:'343px'
+        xxs:'343px',
+        smd:'824px'
       }
     },
   },
