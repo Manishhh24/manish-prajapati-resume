@@ -13,7 +13,7 @@ const HeaderContent = () => {
         <div className="pr-7 flex flex-row sm:flex-col gap-3 xs:gap-5 sm:gap-1">
           <Link
             href="mailto:mmprajapaty@gmail.com"
-            className="text-white text-sm xxs:text-lg sm:text-sm xs:text-lg md:text-2xl flex flex-row items-center gap-2 hover:cursor-pointer"
+            className="text-white text-sm xxs:text-lg sm:text-sm xs:text-lg md:text-2xl flex flex-row items-center gap-2 hover:cursor-pointer hover:font-semibold transition-transform delay-700 duration-1000"
           >
             <AiOutlineMail />{" "}
             <p className="text-xs hidden sm:block md:text-sm">
@@ -23,7 +23,7 @@ const HeaderContent = () => {
           <Link
             href="https://www.linkedin.com/in/manish-prajapati-3126a31aa/"
             target="/blank"
-            className="text-white text-sm xxs:text-lg sm:text-sm xs:text-lg md:text-2xl flex flex-row items-center gap-2 hover:cursor-pointer"
+            className="text-white text-sm xxs:text-lg sm:text-sm xs:text-lg md:text-2xl flex flex-row items-center gap-2 hover:cursor-pointer hover:font-semibold transition-transform delay-700 duration-1000"
           >
             <AiFillLinkedin />{" "}
             <p className="text-xs hidden sm:block md:text-sm">
@@ -33,7 +33,7 @@ const HeaderContent = () => {
           <Link
             target="/blank"
             href={`https://www.hackerrank.com/mmprajapaty?hr_r=1`}
-            className="text-white text-sm xxs:text-lg sm:text-sm xs:text-lg md:text-2xl flex flex-row items-center gap-2 hover:cursor-pointer"
+            className="text-white text-sm xxs:text-lg sm:text-sm xs:text-lg md:text-2xl flex flex-row items-center gap-2 hover:cursor-pointer hover:font-semibold transition-transform delay-700 duration-1000"
           >
             <SiHackerrank />{" "}
             <p className="text-xs hidden sm:block md:text-sm">mmprajapaty</p>
