@@ -19,9 +19,9 @@ const Navbar = () => {
                 <div
                   className={`flex flex-grow justify-between hover:text-blue-700 transition-all ease-in-out hover:underline hover:underline-offset-8 duration-300 hover:cursor-pointer`}
                 >
-                  <div className="flex justify-around py-4">
+                  <Link href="" className="flex justify-around py-4">
                     {menuitem.label}
-                  </div>
+                  </Link>
                 </div>
               );
             })}
@@ -31,7 +31,7 @@ const Navbar = () => {
           className="flex smd:hidden mr-7 my-2 p-1 text-blue-600 border-blue-400 transition-all active:bg-blue-600 active:text-white border-[2px] rounded-md"
           onClick={() =>
             setTranslateX(
-              translateX == "translate-x-36"
+              translateX.includes("translate-x-36")
                 ? "translate-x-1"
                 : "translate-x-36"
             )
@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
         <div
           ref={menuRef}
-          className={`fixed bg-blue-600 smd:hidden ${translateX} h-fit rounded-md w-36 z-[1] p-4 pr-2 right-0 top-0 mt-28 sm:mt-36 md:mt-44 transition-all duration-500`}
+          className={`fixed bg-blue-600 smd:hidden ${translateX} h-fit rounded-md w-36 z-[1] p-4 pr-2 right-0 top-0 mt-[103px] xxs:mt-28 sm:mt-[141px] md:mt-[165px] transition-all duration-500`}
         >
           <div className="flex flex-col text-[15px] text-white">
             <a>
@@ -50,7 +50,11 @@ const Navbar = () => {
             <br />
             {navbarContent.map((menuItem, i) => {
               return (
-                <Link href="" className="py-1 border-b-[1px] ">
+                <Link
+                  href=""
+                  className="py-1 border-b-[1px]"
+                  onClick={() => setTranslateX("translate-x-36 delay-700")}
+                >
                   {menuItem.label}
                 </Link>
               );
