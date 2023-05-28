@@ -8,9 +8,10 @@ import Link from "next/link";
 const Navbar = () => {
   const menuRef = useRef<HTMLDivElement>(null);
   const [translateX, setTranslateX] = useState("translate-x-36");
+
   return (
     <>
-      <nav className="flex justify-between items-center pl-7">
+      <nav className="flex justify-between items-center pl-7 bg-gradient-to-r from-blue-300 via-white to-white">
         <div className="w-full sm:w-1/5">Test</div>
         <div className="w-full hidden sm:w-3/5 smd:flex flex-row">
           <div className="flex flex-grow text-xs md:text-sm lg:text-base">
@@ -18,6 +19,7 @@ const Navbar = () => {
               return (
                 <div
                   className={`flex flex-grow justify-between hover:text-blue-700 transition-all ease-in-out hover:underline hover:underline-offset-8 duration-300 hover:cursor-pointer`}
+                  key={i}
                 >
                   <Link href="" className="flex justify-around py-4">
                     {menuitem.label}
@@ -43,15 +45,19 @@ const Navbar = () => {
           ref={menuRef}
           className={`fixed bg-blue-600 smd:hidden ${translateX} h-fit rounded-md w-36 z-[1] p-4 pr-2 right-0 top-0 mt-[103px] xxs:mt-28 sm:mt-[141px] md:mt-[165px] transition-all duration-500`}
         >
-          <div className="flex flex-col text-[15px] text-white">
-            <a>
-              <AiOutlineClose onClick={() => setTranslateX("translate-x-36")} />
+          <div className="flex flex-col text-[15px] text-white ">
+            <a
+              className="border-[1px] rounded-[30%] active:text-blue-500 active:bg-white w-fit m-1 hover:cursor-pointer"
+              onClick={() => setTranslateX("translate-x-36")}
+            >
+              <AiOutlineClose className="" />
             </a>
             <br />
             {navbarContent.map((menuItem, i) => {
               return (
                 <Link
                   href=""
+                  key={`Menu-item-mb-${i}`}
                   className="py-1 border-b-[1px]"
                   onClick={() => setTranslateX("translate-x-36 delay-700")}
                 >
