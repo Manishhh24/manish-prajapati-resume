@@ -53,7 +53,6 @@ const ShortsDisplay = () => {
 
     return () => clearTimeout(textCounter);
   }, [short]);
-  //
   return (
     <>
       <span className="flex">
