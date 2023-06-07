@@ -1,18 +1,20 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { navbarContent } from "@/constants/components/header/navbarContent";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
+import ShortsDisplay from "./headerContent/ShortsDisplay";
 
 const Navbar = () => {
-  const menuRef = useRef<HTMLDivElement>(null);
   const [translateX, setTranslateX] = useState("translate-x-36");
 
   return (
     <>
       <nav className="flex justify-between items-center pl-7 bg-gradient-to-r from-blue-300 via-white to-white">
-        <div className="w-full sm:w-1/5">Test</div>
+        <div className="w-full sm:w-1/5">
+          <ShortsDisplay />
+        </div>
         <div className="w-full hidden sm:w-3/5 smd:flex flex-row">
           <div className="flex flex-grow text-xs md:text-sm lg:text-base">
             {navbarContent.map((menuitem, i) => {
@@ -42,7 +44,6 @@ const Navbar = () => {
           <GiHamburgerMenu className="text-end" />
         </div>
         <div
-          ref={menuRef}
           className={`fixed bg-blue-600 smd:hidden ${translateX} h-fit rounded-md w-36 z-[1] p-4 pr-2 right-0 top-0 mt-[103px] xxs:mt-28 sm:mt-[141px] md:mt-[165px] transition-all duration-500`}
         >
           <div className="flex flex-col text-[15px] text-white ">
