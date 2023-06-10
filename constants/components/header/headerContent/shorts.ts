@@ -1,0 +1,1 @@
+export const shorts = ["Keen Learner", "Passionate to implement", "Enthusiastic coder"];

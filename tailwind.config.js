@@ -3,7 +3,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx, ts, mdx}',
   ],
   theme: {
     extend: {
@@ -12,6 +12,13 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily:{
+        libreBaskerVille: ['Libre Baskerville', 'sans']
+      },
+      screens:{
+        xxs:'343px',
+        smd:'824px'
+      }
     },
   },
   plugins: [],
