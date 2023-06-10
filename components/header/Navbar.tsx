@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex justify-between items-center pl-7 bg-gradient-to-r from-blue-300 via-white to-white">
-        <div className="w-full sm:w-1/5">
+        <div className="w-full md:w-1/5">
           <ShortsDisplay />
         </div>
         <div className="w-full hidden sm:w-3/5 smd:flex flex-row">
