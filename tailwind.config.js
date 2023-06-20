@@ -13,7 +13,8 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily:{
-        libreBaskerVille: ['Libre Baskerville', 'sans']
+        libreBaskerVille: ['Libre Baskerville', 'sans'],
+        sourceCodePro: ['SourceCodePro', 'sans']
       },
       screens:{
         xxs:'343px',
