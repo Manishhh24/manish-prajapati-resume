@@ -1,4 +1,4 @@
-import Introduction from "@/components/header/homePage/Introduction";
+import Introduction from "@/components/homePage/Introduction";
 import Image from "next/image";
 
 export default function Home() {
