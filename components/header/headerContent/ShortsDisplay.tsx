@@ -56,7 +56,7 @@ const ShortsDisplay = () => {
   return (
     <>
       <span className="flex">
-        <p className="text-[12px] xxs:text-[15px] text-blue-900">
+        <p className="text-[12px] xxs:text-[13px] smd:text-[14px] lg:text-[15px] text-blue-900">
           {short.currentShort}
         </p>
         <p className="motion-safe:animate-pulse text-blue-900">|</p>

@@ -44,7 +44,7 @@ const Navbar = () => {
           <GiHamburgerMenu className="text-end" />
         </div>
         <div
-          className={`fixed bg-blue-600 smd:hidden ${translateX} h-fit rounded-md w-36 z-[1] p-4 pr-2 right-0 top-0 mt-[103px] xxs:mt-28 sm:mt-[141px] md:mt-[165px] transition-all duration-500`}
+          className={`fixed opacity-80 bg-blue-600 smd:hidden ${translateX} h-fit rounded-md w-36 z-[1] p-4 pr-2 right-0 top-0 mt-[103px] xxs:mt-28 sm:mt-[141px] md:mt-[165px] transition-all duration-500`}
         >
           <div className="flex flex-col text-[15px] text-white ">
             <a
