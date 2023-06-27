@@ -14,7 +14,8 @@ module.exports = {
       },
       fontFamily:{
         libreBaskerVille: ['Libre Baskerville', 'serif'],
-        sourceCodePro: ['SourceCodePro', 'monospace']
+        sourceCodePro: ['Source Code Pro', 'monospace'],
+        ysabeauOffice: ['Ysabeau Office', 'sans-serif']
       },
       screens:{
         xxs:'343px',
