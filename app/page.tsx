@@ -1,11 +1,10 @@
-import Introduction from "@/components/header/homePage/Introduction";
-import Image from "next/image";
+import HomePage from "@/components/homePage/HomePage";
 
 export default function Home() {
   return (
     <>
       <div>
-        <Introduction />
+        <HomePage />
       </div>
     </>
   );
