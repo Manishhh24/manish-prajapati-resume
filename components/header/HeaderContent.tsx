@@ -4,7 +4,7 @@ import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import { SiHackerrank } from "react-icons/si";
 
 const HeaderContent = () => {
-  return (  
+  return (
     <>
       <div className="flex justify-between py-5 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-500 max-w-screen-2xl items-center">
         <h1 className="text-sm xxs:text-lg sm:text-2xl md:text-5xl text-white text-left pl-7 font-libreBaskerVille">
