@@ -15,10 +15,12 @@ module.exports = {
       fontFamily:{
         libreBaskerVille: ['Libre Baskerville', 'serif'],
         sourceCodePro: ['Source Code Pro', 'monospace'],
-        ysabeauOffice: ['Ysabeau Office', 'sans-serif']
+        ysabeauOffice: ['Ysabeau Office', 'sans-serif'],
+        robotoCondensed: ['Roboto Condensed', 'sans-serif']
       },
       screens:{
         xxs:'343px',
+        xs:'576px',
         smd:'824px'
       }
     },
